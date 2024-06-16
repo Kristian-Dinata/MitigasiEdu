@@ -1,0 +1,190 @@
+/* CSS untuk bagian banner */
+.banner {
+  background: url("disaster.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  color: #fff;
+}
+
+/* CSS untuk lingkaran */
+.lingkaran {
+  display: inline-block;
+  border-radius: 50%;
+  width: 150px;
+  margin: auto;
+  height: 150px;
+  color: #fff;
+  background-color: #dc3545;
+}
+
+.lingkaran i {
+  position: relative;
+  top: 30px;
+}
+
+/* CSS untuk gambar yang di-crop */
+.crop-img {
+  object-fit: cover;
+}
+
+/* CSS untuk gambar tim */
+.tim img {
+  width: 250px;
+  border: 10px solid #cccccc;
+}
+
+/* CSS untuk tautan sosial */
+a.social {
+  display: inline-flex; /* Menggunakan flexbox */
+  justify-content: center; /* Mengatur konten menjadi di tengah horizontal */
+  align-items: center; /* Mengatur konten menjadi di tengah vertikal */
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #333;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+/* CSS untuk gambar klien */
+.client img {
+  height: auto;
+  max-height: 50px;
+}
+
+/* CSS untuk bagian kontak */
+.kontak {
+  background: url("bg.jpg") no-repeat center center;
+  background-size: cover;
+  padding-bottom: 20%;
+  padding-top: 20%;
+  color: #fff;
+}
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+#scrollToTopBtn.show {
+  display: block;
+}
+
+
+
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+#blinking-text {
+  animation: blink 1s infinite;
+}
+
+
+
+
+/* CSS untuk handphone dan tablet */
+@media only screen and (max-width: 991px) {
+  /* Banner */
+  .index {
+    overflow-y: auto; /* Mengatur overflow-y ke auto untuk memungkinkan scrolling vertikal */
+    height: 100vh; /* Menetapkan tinggi sesuai dengan ukuran viewport */
+  }
+
+  /* Bagian Layanan */
+  .tentang {
+    overflow-y: auto; /* Mengatur overflow-y ke auto untuk memungkinkan scrolling vertikal */
+    height: 100vh; /* Menetapkan tinggi sesuai dengan ukuran viewport */
+  }
+
+  /* Bagian Jenis Bencana */
+  #langkah {
+    overflow-y: auto; /* Mengatur overflow-y ke auto untuk memungkinkan scrolling vertikal */
+    height: 100vh; /* Menetapkan tinggi sesuai dengan ukuran viewport */
+  }
+
+  /* Bagian proyek */
+  #jenis {
+    overflow-y: auto; /* Mengatur overflow-y ke auto untuk memungkinkan scrolling vertikal */
+    height: 100vh; /* Menetapkan tinggi sesuai dengan ukuran viewport */
+  }
+
+  /* Bagian Langkah Mitigasi */
+  .proyek {
+    overflow-y: auto; /* Mengatur overflow-y ke auto untuk memungkinkan scrolling vertikal */
+    height: 100vh; /* Menetapkan tinggi sesuai dengan ukuran viewport */
+  }
+
+  /* Bagian Staff */
+  .staff {
+    overflow-y: auto; /* Mengatur overflow-y ke auto untuk memungkinkan scrolling vertikal */
+    height: 100vh; /* Menetapkan tinggi sesuai dengan ukuran viewport */
+  }
+
+  /* Bagian Client */
+  .client {
+    overflow-y: auto; /* Mengatur overflow-y ke auto untuk memungkinkan scrolling vertikal */
+    height: 100vh; /* Menetapkan tinggi sesuai dengan ukuran viewport */
+  }
+
+  /* Bagian Kontak */
+  .kontak {
+    overflow-y: auto; /* Mengatur overflow-y ke auto untuk memungkinkan scrolling vertikal */
+    height: 100vh; /* Menetapkan tinggi sesuai dengan ukuran viewport */
+  }
+}
+
+
+
+.btn-orange {
+  background-color: orange;
+  border-color: orange;
+  color: white; /* Ubah warna teks sesuai kebutuhan */
+}
+
+
+
+
+header h1 {
+  text-align: center; /* Mengatur teks judul menjadi sejajar di tengah */
+  margin-top: 20px; /* Memberikan sedikit jarak di atas judul */
+}
+
+nav {
+  text-align: center; /* Mengatur tautan navigasi menjadi sejajar di tengah */
+}
+
+nav ul {
+  list-style-type: none; /* Menghilangkan bullet pada daftar tautan */
+  padding: 0;
+}
+
+nav ul li {
+  display: inline; /* Mengatur tautan menjadi sejajar */
+  margin-right: 20px; /* Memberikan sedikit jarak antara tautan */
+}
+
+nav ul li a {
+  text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+  color: black; /* Mengatur warna teks tautan */
+}
+
+
+/* ukuran HP */
+

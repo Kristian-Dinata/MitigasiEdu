@@ -1,0 +1,90 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<style>
+  body {
+      background-color: #00FF7F;
+  }
+</style>
+
+<div class="container-fluid pt-5 pb-5" id="langkah">
+    <div class="container">
+        <h2 class="display-3 text-center" id="langkah">Langkah Mitigasi</h2>
+        <p class="text-center">
+          Langkah-langkah mitigasi adalah upaya yang diambil untuk mengurangi atau mencegah dampak buruk dari bencana
+          alam atau buatan manusia. Mitigasi bertujuan untuk melindungi kehidupan, properti, dan lingkungan serta
+          meminimalkan kerugian dan konsekuensi bencana.
+        </p>
+        <div class="clearfix pt-5">
+          <img
+            src="{{ url_for('static', filename='langkah.jpg') }}"
+            class="col-md-6 float-md-end mb-3 crop-img"
+            width="300"
+            height="400"
+            alt="Illustration demonstrating steps for disaster mitigation, including risk assessment, planning, environmental maintenance, integration, and monitoring."
+          >
+
+          <p>
+            1. Penilaian Risiko: Melakukan analisis risiko untuk mengidentifikasi potensi ancaman dan kerentanan di suatu wilayah.
+            Menilai potensi dampak bencana terhadap manusia, properti, dan lingkungan.
+          </p>
+          <p>
+            2. Perencanaan Tata Ruang yang Bijaksana: Menentukan zona-zona risiko dan membatasi pembangunan di daerah rawan bencana.
+            Menerapkan peraturan tata ruang yang mempertimbangkan risiko bencana.
+          </p>
+          <p>
+            3. Pemeliharaan Lingkungan: Menerapkan praktik-praktik konservasi dan rehabilitasi lingkungan untuk mengurangi risiko tanah longsor,
+            banjir, dan erosi. Memelihara hutan dan vegetasi sebagai bentuk perlindungan alami.
+          </p>
+          <p>
+            4. Pengintegrasian Mitigasi dalam Perencanaan Pembangunan: Menyelaraskan langkah-langkah mitigasi dengan perencanaan pembangunan
+            nasional dan lokal. Memastikan bahwa infrastruktur dan kebijakan pembangunan mencakup aspek mitigasi bencana.
+          </p>
+          <p>
+            5. Pemantauan dan Evaluasi: Melakukan pemantauan dan evaluasi berkelanjutan terhadap kondisi alam dan implementasi langkah-langkah mitigasi.
+            Menyesuaikan dan meningkatkan rencana mitigasi berdasarkan pengalaman dan perubahan kondisi.
+          </p>
+          <p>
+            6. Penelitian dan Identifikasi Risiko: Langkah pertama dalam mitigasi bencana adalah memahami risiko bencana yang mungkin terjadi di suatu wilayah.
+            Ini melibatkan penelitian dan identifikasi potensi bencana, seperti gempa bumi, banjir, tanah longsor, kebakaran hutan, dan lain sebagainya.
+          </p>
+          <p>
+            7. Pemetaan Risiko: Setelah identifikasi risiko, langkah selanjutnya adalah membuat pemetaan risiko yang memperlihatkan daerah-daerah yang rentan
+            terhadap bencana dan tingkat risiko yang terkait.
+          </p>
+          <p>
+            8. Perencanaan Pengurangan Risiko: Berdasarkan pemetaan risiko, perencanaan dilakukan untuk mengurangi atau menghilangkan faktor-faktor risiko yang
+            dapat menyebabkan kerugian yang lebih besar. Ini mungkin termasuk kegiatan seperti penguatan struktur bangunan, pembangunan tanggul, penanaman
+            vegetasi untuk mencegah erosi, dll.
+          </p>
+          <p>
+            9. Penyuluhan dan Pendidikan Masyarakat: Upaya ini bertujuan untuk meningkatkan kesadaran masyarakat tentang risiko bencana, tindakan yang harus
+            dilakukan dalam situasi darurat, serta langkah-langkah pencegahan yang dapat mereka ambil. Hal ini termasuk menyediakan pelatihan pertolongan pertama,
+            pelatihan evakuasi, dan kampanye penyuluhan tentang mitigasi bencana.
+          </p>
+          <p>
+            10. Pembangunan Infrastruktur Tanggap Bencana: Infrastruktur fisik seperti sistem peringatan dini, pusat evakuasi, jalan evakuasi, dan penyediaan pasokan
+            air bersih serta pangan darurat merupakan bagian penting dari mitigasi bencana.
+          </p>
+          <p>
+            12. Regulasi dan Kebijakan: Pemerintah biasanya menerapkan regulasi dan kebijakan untuk memastikan bahwa bangunan dan infrastruktur memenuhi standar
+            keamanan yang sesuai dengan risiko bencana yang ada. Misalnya, peraturan zonasi dapat diterapkan untuk mengurangi pembangunan di daerah rawan bencana.
+          </p>
+          <p>
+            13. Ketersediaan Sumber Daya Darurat: Persiapan sumber daya darurat yang memadai, termasuk peralatan pemadam kebakaran, peralatan medis, persediaan makanan
+            dan air, serta tim penyelamat, sangat penting untuk merespons bencana dengan efektif.
+          </p>
+          <p>
+            14. Evaluasi dan Revisi: Langkah terakhir dalam mitigasi bencana adalah evaluasi secara berkala terhadap program-program mitigasi yang ada dan melakukan revisi
+            jika diperlukan. Evaluasi ini bertujuan untuk mengevaluasi efektivitas langkah-langkah mitigasi yang telah diimplementasikan dan mengidentifikasi area di mana
+            perbaikan lebih lanjut diperlukan.
+          </p>
+          <p>
+            Dengan menerapkan langkah-langkah ini, diharapkan bahwa risiko bencana dapat dikurangi, dan masyarakat dapat lebih siap dalam menghadapi bencana yang mungkin terjadi.
+            Mitigasi bencana adalah proses yang berkelanjutan dan memerlukan kerjasama antara pemerintah, masyarakat sipil, sektor swasta, dan berbagai pemangku kepentingan lainnya.
+          </p>
+        </div>
+      </div>
+    </div>
+{% endblock %}

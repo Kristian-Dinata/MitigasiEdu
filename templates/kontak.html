@@ -1,0 +1,53 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<style>
+  body {
+      background-color: MediumSeaGreen;
+  }
+</style>
+
+<div class="container-fluid pt-5 pb-6 kontak" id="kontak">
+    <div class="container">
+        <h2 class="display-3 text-center" id="kontak">Kontak Kami</h2>
+        <p></p>
+        <p class="text-center">
+          Jika Anda memiliki pertanyaan lebih lanjut atau memerlukan bantuan, silakan hubungi kontak kami.
+          Kami siap membantu Anda dengan informasi tambahan atau solusi terbaik untuk memenuhi kebutuhan Anda.
+        </p>
+        <div class="row pb-3">
+          <div class="col-md-6">
+            <form action="" method="POST">
+              <input
+                class="form-control form-control-lg mb-3"
+                type="text"
+                placeholder="Nama"
+                name="nama"
+              >
+              <input
+                class="form-control form-control-lg mb-3"
+                type="text"
+                placeholder="Email"
+                name="email"
+              >
+              <input
+                class="form-control form-control-lg"
+                type="text"
+                placeholder="No. Phone"
+                name="phone"
+              >
+            </div>
+          <div class="col-md-6">
+            <textarea class="form-control form-control-lg" rows="5" placeholder="Pesan" name="pesan"></textarea>
+          </div>
+        </div>
+        <div class="col-md-3 mx-auto text-center">
+          <button type="submit" class="btn btn-danger btn-lg">
+            Kirim Pesan
+          </button>
+        </div>
+        </form>
+      </div>
+    </div>
+{% endblock %}

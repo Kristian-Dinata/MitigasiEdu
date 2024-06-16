@@ -1,0 +1,94 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+    <!-- Staff -->
+    <div class="container-fluid pt-5 pb-5 bg-light" id="staff">
+        <div class="container text-center">
+            <h2 class="display-3" id="staff">Staff</h2>
+            <p>
+              Tim pelayanan bertanggung jawab untuk menyediakan pelayanan berkualitas tinggi. Melalui komitmen dan kerjasama,
+              tim ini berupaya memberikan solusi yang efektif dan tanggap dalam memenuhi tuntutan serta harapan anda.
+            </p>
+            <div class="row pt-4 gx-4 gy-4">
+              <div class="col-md-4 text-center tim">
+                <img
+                  src="{{ url_for('static', filename='staff1.jpg') }}"
+                  class="rounded-circle mb-3"
+                  alt="Photograph of M. Azzam Dinata, an expert in geophysics."
+                >
+                <h4>M. Azzam Dinata</h4>
+                <p>Ahli Geofisika</p>
+                <p>
+                  <a href="" class="social"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="" class="social"><i class="fab fa-facebook-f"></i></a>
+                  <a href="" class="social"><i class="fab fa-twitter"></i></a>
+                </p>
+              </div>
+              <div class="col-md-4 text-center tim">
+                <img
+                  src="{{ url_for('static', filename='staff2.jpg') }}"
+                  class="rounded-circle mb-3"
+                  alt="Photograph of B. Ammira Dinata, a data scientist."
+                >
+                <h4>B. Ammira Dinata</h4>
+                <p>Data Scientist</p>
+                <p>
+                  <a href="" class="social"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="" class="social"><i class="fab fa-facebook-f"></i></a>
+                  <a href="" class="social"><i class="fab fa-twitter"></i></a>
+                </p>
+              </div>
+              <div class="col-md-4 text-center tim">
+                <img
+                  src="{{ url_for('static', filename='staff3.jpg') }}"
+                  class="rounded-circle mb-3"
+                  alt="Photograph of M. Abeezar Dinata, a specialist doctor."
+                >
+                <h4>M. Abeezar Dinata</h4>
+                <p>Dokter Ahli</p>
+                <p>
+                  <a href="" class="social"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="" class="social"><i class="fab fa-facebook-f"></i></a>
+                  <a href="" class="social"><i class="fab fa-twitter"></i></a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <!-- Client -->
+    <div class="container-fluid client pt-5 pb-5">
+        <div class="container text-center">
+            <div class="row pt-4 gx-4 gy-4">
+              <div class="col">
+                <img
+                src="{{ url_for('static', filename='klien1.jpg') }}"
+                alt="Client 1"
+                >
+              </div>
+              <div class="col">
+                <img
+                  src="{{ url_for('static', filename='klien2.jpg') }}"
+                  alt="Client 2"
+                >
+              </div>
+              <div class="col">
+                <img src="{{ url_for('static', filename='klien3.jpg') }}" alt="Client 3">
+              </div>
+              <div class="col">
+                <img
+                src="{{ url_for('static', filename='klien4.jpg') }}"
+                alt="Client 4"
+                >
+              </div>
+              <div class="col">
+                <img
+                  src="{{ url_for('static', filename='klien5.jpg') }}"
+                  alt="Client 5"
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+{% endblock %}

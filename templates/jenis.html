@@ -1,0 +1,74 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<style>
+  body {
+      background-color: #C71585;
+  }
+</style>
+
+    <!-- Jenis Bencana -->
+    <div class="container-fluid pt-5 pb-5 bg-light" id="jenis">
+        <div class="container text-center">
+            <h2 class="display-3" id="jenis">Jenis Bencana</h2>
+            <p>
+              Jenis bencana yang dibahas meliputi dampak dari perubahan iklim seperti
+              banjir dan kekeringan, gempa bumi, serta pandemi, sementara upaya mitigasi
+              yang disorot mencakup langkah-langkah adaptasi dan mitigasi untuk mengurangi
+              risiko serta kerugian yang ditimbulkan oleh bencana-bencana tersebut.
+            </p>
+            <div class="row pt-4 gx-4 gy-4">
+              <div class="col-md-4">
+                <div class="card crop-img">
+                  <iframe width="400" height="350"
+                  src="https://www.youtube.com/embed/X4jMKbqbk3Q" allowfullscreen>
+                  </iframe>
+                  <div class="card-body">
+                    <h5 class="card-title">Perubahan Iklim.</h5>
+                    <p class="card-text">
+                      Perubahan iklim adalah fenomena global yang melibatkan peningkatan suhu
+                      rata-rata atmosfer Bumi serta perubahan pola cuaca ekstrem yang disebabkan
+                      oleh aktivitas manusia, terutama pemanasan global akibat emisi gas rumah kaca.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card crop-img">
+                  <iframe width="400" height="350"
+                  src="https://www.youtube.com/embed/DeafytS3Rjw" allowfullscreen>
+                  </iframe>
+                  <div class="card-body">
+                    <h5 class="card-title">Gempa Bumi.</h5>
+                    <p class="card-text">
+                      Gempa bumi adalah getaran atau goncangan yang terjadi di permukaan Bumi karena
+                      pelepasan energi dari dalam kerak bumi, seringkali disebabkan oleh pergeseran
+                      lempeng tektonik atau aktivitas geologis lainnya.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card crop-img">
+                  <iframe width="400" height="350"
+                  src="https://www.youtube.com/embed/fN-_wwzMYEA" allowfullscreen>
+                  </iframe>
+                  <div class="card-body">
+                    <h5 class="card-title">Virus.</h5>
+                    <p class="card-text">
+                      Pandemi atau virus adalah penyebaran penyakit yang meluas secara global, seringkali
+                      disebabkan oleh virus yang menular antarmanusia dan dapat menyebabkan dampak kesehatan
+                      yang serius serta gangguan sosial dan ekonomi yang luas.
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+{% endblock %}

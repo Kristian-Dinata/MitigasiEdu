@@ -1,0 +1,102 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<style>
+  body {
+      background-color: #8A2BE2;
+  }
+</style>
+
+<div class="container-fluid pt-5 pb-5 bg-light" id="proyek">
+    <div class="container text-center">
+        <h2 class="display-3" id="jenis">Proyek</h2>
+        <p>
+          Halaman ini mencerminkan hasil dari proyek pengolahan data yang telah saya jalani,
+          yang meliputi analisis gempa bumi selama 34 tahun di provinsi Bengkulu, Indonesia.
+          Pendekatan ini memanfaatkan perangkat lunak SQLite 3 dan bahasa pemrograman Python
+          serta hasil program Machine Learning.
+        </p>
+        <div class="row pt-4 gx-4 gy-4">
+          <div class="col-md-4">
+            <div class="card crop-img">
+              <img src="{{ url_for('static', filename='grafik tahun.png') }}"
+                alt="Illustration of an earthquake, representing seismic activity and its impact on the environment."
+                class="card-img-top"
+                width="400"
+                height="400">
+              <div class="card-body">
+                <h5 class="card-title">Gempa Pertahun.</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card crop-img">
+              <img src="{{ url_for('static', filename='grafik bulan.png') }}"
+                alt="Illustration of an earthquake, representing seismic activity and its impact on the environment."
+                class="card-img-top"
+                width="400"
+                height="400">
+              <div class="card-body">
+                <h5 class="card-title">Gempa Perbulan.</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card crop-img">
+              <img src="{{ url_for('static', filename='grafik hari.png') }}"
+                alt="Illustration of an earthquake, representing seismic activity and its impact on the environment."
+                class="card-img-top"
+                width="400"
+                height="400">
+              <div class="card-body">
+                <h5 class="card-title">Gempa Perhari.</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card crop-img">
+              <img src="{{ url_for('static', filename='grafik jam.png') }}"
+                alt="Illustration of an earthquake, representing seismic activity and its impact on the environment."
+                class="card-img-top"
+                width="400"
+                height="400">
+              <div class="card-body">
+                <h5 class="card-title">Gempa Perjam.</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card crop-img">
+              <img src="{{ url_for('static', filename='grafik 34 tahun.png') }}"
+                alt="Illustration of an earthquake, representing seismic activity and its impact on the environment."
+                class="card-img-top"
+                width="400"
+                height="400">
+              <div class="card-body">
+                <h5 class="card-title">Gempa 34 tahun.</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card crop-img">
+              <img src="{{ url_for('static', filename='grafik prediksi.png') }}"
+                alt="Illustration of an earthquake, representing seismic activity and its impact on the environment."
+                class="card-img-top"
+                width="400"
+                height="400">
+              <div class="card-body">
+                <h5 class="card-title">Prediksi Machine Learning.</h5>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+{% endblock %}

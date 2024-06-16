@@ -1,0 +1,110 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<style>
+  body {
+      background-color: #7CFC00;
+  }
+</style>
+
+<div class="container-fluid layanan pt-5 pb-5" id="tentang">
+    <div class="container text-center">
+        <h2 class="display-3" id="tentang">Tentang Kami</h2>
+        <p>
+          Kami menyediakan informasi, sumber daya, dan tindakan yang bertujuan untuk mengurangi risiko dan
+          dampak bencana alam atau manusia.
+        </p>
+        <div class="row pt-4">
+          <div class="col-md-4">
+            <span class="lingkaran"><i class="fas fa-cloud-sun-rain fa-5x"></i></span>
+            <h3 class="mt-3">Prakiraan Cuaca</h3>
+            <p>
+              Informasi prakiraan cuaca mencakup suhu udara, kelembaban, kecepatan angin, serta kemungkinan
+              hujan atau cuaca ekstrem lainnya.
+            </p>
+            <p>
+              <button class="btn btn-primary btn-lg" onclick="window.location.href='https://www.bmkg.go.id/cuaca/prakiraan-cuaca-indonesia.bmkg'">
+                <span id="blinking-text">BMKG Cuaca</span>
+              </button>
+            </p>
+            <p>
+              <button class="btn btn-primary btn-lg" onclick="window.location.href='https://www.accuweather.com/'">
+                <span id="blinking-text">AccuWeather</span>
+              </button>
+            </p>
+            <p>
+              <button class="btn btn-primary btn-lg" onclick="window.location.href='https://weather.com/?Goto=Redirected'">
+                <span id="blinking-text">Weather Channel</span>
+              </button>
+            </p>
+            <p>
+              <button class="btn btn-primary btn-lg" onclick="window.location.href='https://www.wunderground.com/'">
+                <span id="blinking-text">Weather Underground</span>
+              </button>
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <span class="lingkaran"><i class="fas fa-water fa-5x"></i></span>
+            <h3 class="mt-3">Gempa Bumi</h3>
+            <p>
+              Kami memberikan informasi tentang gempa terkini. Data yang disajikan mencakup waktu gempa,
+              lintang, bujur, kedalaman, dan wilayah terdampak.
+            </p>
+            <p>
+              <button class="btn btn-dark btn-lg" onclick="window.location.href='https://www.bmkg.go.id/gempabumi/gempabumi-terkini.bmkg'">
+                <span id="blinking-text">BMKG Gempa</span>
+              </button>
+            </p>
+            <p>
+              <button class="btn btn-dark btn-lg" onclick="window.location.href='https://earthquake.usgs.gov'">
+                <span id="blinking-text">USGS Earthquake</span>
+              </button>
+            </p>
+            <p>
+              <button class="btn btn-dark btn-lg" onclick="window.location.href='https://www.emsc-csem.org/'">
+                <span id="blinking-text">EMSC Earthquake</span>
+              </button>
+            </p>
+            <p>
+              <button class="btn btn-dark btn-lg" onclick="window.location.href='https://www.gdacs.org/'">
+                <span id="blinking-text">EGDACS Earthquake</span>
+              </button>
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <span class="lingkaran"
+              ><i class="fas fa-snowflake fa-5x"></i
+            ></span>
+            <h3 class="mt-3">Pandemi dan Penyakit Menular</h3>
+            <p>
+              Kami menyediakan informasi tentang pandemi dan penyakit menular sangat berguna
+              untuk berbagai tujuan terutama untuk mitigasi.
+            </p>
+            <p>
+              <button class="btn btn-primary btn-lg btn-orange" onclick="window.location.href='https://www.who.int/'">
+                <span id="blinking-text">WHO Pandemi</span>
+              </button>
+            </p>
+            <p>
+              <button class="btn btn-primary btn-lg btn-orange" onclick="window.location.href='https://www.cdc.gov/'">
+                <span id="blinking-text">CDCP Pandemi</span>
+              </button>
+            </p>
+            <p>
+              <button class="btn btn-primary btn-lg btn-orange" onclick="window.location.href='https://www.ecdc.europa.eu/en'">
+                <span id="blinking-text">ECDC Pandemi</span>
+              </button>
+            </p>
+            <p>
+              <button class="btn btn-primary btn-lg btn-orange" onclick="window.location.href='https://coronavirus.jhu.edu/'">
+                <span id="blinking-text">JHCRC Pandemi</span>
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}
